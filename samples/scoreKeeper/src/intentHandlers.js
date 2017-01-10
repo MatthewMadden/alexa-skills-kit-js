@@ -161,7 +161,7 @@ var registerIntentHandlers = function (intentHandlers, skillContext) {
             sortedPlayerScores.forEach(function (playerScore, index) {
                 if (index === 0) {
                     speechOutput += playerScore.player + ' has ' + playerScore.score + 'point';
-                    if (playerScore.score > 1) {
+                    if (playerScore.score > 1 ) {
                         speechOutput += 's';
                     }
                 } else if (index === sortedPlayerScores.length - 1) {
